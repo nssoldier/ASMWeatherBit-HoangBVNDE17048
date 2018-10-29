@@ -8,6 +8,7 @@ body
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .CityItem:hover
 {
@@ -97,6 +98,7 @@ body
 } */
 .align-self-baseline:hover {
     border: 1px solid white;
+    border-radius: 5px;
 }
 .descr
 {
