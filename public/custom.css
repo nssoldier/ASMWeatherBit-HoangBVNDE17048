@@ -1,0 +1,165 @@
+
+body
+{
+    background-color: #9494ff;
+    color: white;
+    background:  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.CityItem:hover
+{
+    background: #9494ff;
+}
+.CityItem
+{
+    cursor: auto;
+}
+.swapz
+{
+    cursor: pointer;
+    background-color:  #7777ff8c;
+    padding-left: 7px;
+    padding-right: 7px
+}
+.swapz:hover
+{
+    background-color: #9494ff;
+}
+.buttonscr
+{
+    cursor: pointer !important;
+}
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+.searchbutton
+{
+    border: 0px solid;
+    outline: none !important;
+    border-radius: 0px;
+    margin-right: 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.dailyz
+{
+    min-width: 300px;
+    max-width: 800px;
+}
+.searchbutton:hover
+{
+    background-color: rgb(240, 240, 240);
+}
+.searcharea:hover, .searcharea:focus
+{
+    background-color: rgb(240, 240, 240);
+}
+
+.daychoose
+{
+    background-color: #9494ff;
+}
+
+.live__scroll {
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+    padding: 0px;
+    margin-left: 2px;
+    /* height: 200px; */
+    background-color: #7777ff8c
+}
+
+.live__scroll .row {
+    display: block;
+}
+
+.live__scroll .live__scroll--box {
+    display: inline-block;
+    padding: 15px;
+    width: 200px;
+    height: 150px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+/* @media (max-width: 449px)
+{
+    .buttonscr
+    {
+        display: none;
+    }
+} */
+.align-self-baseline:hover {
+    border: 1px solid white;
+}
+.descr
+{
+    font-size: 12px;
+}
+.tempz
+{
+    font-size: 3rem;
+}
+.logozz
+{
+    display: inline;
+    color: #ff6600;
+    
+}
+.trademarkz
+{
+    display: inline-block;
+    outline: none !important;
+    /* background-color: none !important; */
+    border: none;
+    cursor: pointer;
+}
+.searcharea
+{
+    
+    border: 0px solid;
+    outline: none !important;
+    background-color: rgb(221, 221, 221);
+    border-radius: 0px;
+    padding: 5px;
+}
+.currentweatherz
+ { 
+    text-align: center;
+ } 
+ .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 184px;
+    overflow: auto;
+    margin-top: 32px;
+    border: none;
+    box-shadow: rgb(122, 122, 122) 5px 5px 8px;
+    /* z-index: 0; */
+}
+.dropdown-content > div
+{
+    color: #ff6600
+}
+.topbarz
+{
+    height: 2.5rem;
+    background-color: none;
+}
+.searchz
+{
+    margin-top: 0.2rem;
+    float: right;
+    z-index: 1;
+}
+/* .searchz:active + .dropdown-content{
+    visibility: visible;
+} */
+/* .dropdown-content .searcharea:not(:forcus) 
+{
+    visibility: hidden;
+} */
