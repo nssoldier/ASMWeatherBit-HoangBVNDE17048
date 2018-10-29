@@ -299,7 +299,7 @@ class Weather extends React.Component {
                 this.setState({ cities: [] });
             }
 
-            var url2 = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=%09dcAMLNle138ZDrNtA5t0IKuY9u9AEg9r&q=" + this.state.searchcity;
+            var url2 = "http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=NApTOGvM4b6sxddiIKmPGjBFr8VABQx6&q=" + this.state.searchcity;
             fetch(url2).then(response2 => {
                 if (response2.status == 200) {
                     return response2.json()
