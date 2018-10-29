@@ -12,10 +12,13 @@ body
 .CityItem:hover
 {
     background: #9494ff;
+    border: 1px #ff6600 solid;
+    padding-left: 10px;
 }
 .CityItem
 {
     cursor: auto;
+    padding-left: 5px;
 }
 .swapz
 {

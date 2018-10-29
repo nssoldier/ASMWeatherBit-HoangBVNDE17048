@@ -95,6 +95,7 @@ class Search extends React.Component {
         this.setState({
             isClick: !this.state.isClick
         });
+        this.props.buttonz(this.state.isClick);
     }
     inputzz = (value) => {
         this.props.getInput(value);
@@ -145,10 +146,13 @@ class NavBar extends React.Component {
     pickCity = (value) => {
         this.props._pickCity(value)
     }
+    _button = (value) =>{
+        this.props.buttonz(value);
+    }
     render() {
         return (<div className="navbar topbarz ">
             <Logo _HomePage={this.Homez} />
-            <Search getInput={this.inputzz} _pickCity={this.pickCity} confirmSearch={this.onEnterz} citySearch={this.props._citySearch} />
+            <Search getInput={this.inputzz} _pickCity={this.pickCity} buttonz={this._button} confirmSearch={this.onEnterz} citySearch={this.props._citySearch} />
         </div>);
     }
 }
@@ -468,11 +472,18 @@ class Weather extends React.Component {
         document.getElementById('Search').value = ""
     }
 
+    _button = (value) =>
+    {
+        if (value == true) {
+            this.setState({searchcity: ""});
+            document.getElementById('Search').value = ""
+        }
+    }
 
     render() {
         return (
             <div>
-                <NavBar searchz={this.searchz} _pickCity={this.pickCity} HomePage={this.HomePage} enter={this.enter} _citySearch={this.state.cities} _onClickHandle={this.onClickHandle} />
+                <NavBar searchz={this.searchz} buttonz={this._button}_pickCity={this.pickCity} HomePage={this.HomePage} enter={this.enter} _citySearch={this.state.cities} _onClickHandle={this.onClickHandle} />
                 <ShowWeather CF={this.state.CF} noti={this.state.noti} weather={this.state.weather} _country={this.state.weather.country_code} _city={this.state.weather.city_name} weatherm={this.state.weathermain} _onClickHandle={this.onClickHandle} _selectItem={this.selectItem} />
             </div>
         );
